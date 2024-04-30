@@ -95,6 +95,8 @@ class Typing {
     }
 
     public function levelUp() {
+        $this->level++;
+        
         for ($x = 0; $x < Config::$initialPileCount + $this->level; $x++) {
             $this->addChar();
         }
